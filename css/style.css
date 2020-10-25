@@ -48,6 +48,9 @@ h4{
 .centrar-texto{
     text-align: center;
 }
+.contenido-centrado{
+    max-width: 800px;
+}
 .boton{
     color: white;
     font-weight: 700;
@@ -130,12 +133,13 @@ h4{
 .contenedor-anuncio{
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
 }
 .anuncio{
-    flex-basis: calc(33.3 - 1rem);
+    flex: 0 0 calc(33.3% - 1rem);
     border: 1px solid #b5b5b5;
     background-color: #F5F5F5;
+    margin-bottom: 1rem;
 }
 .contenido-anuncio{
     padding: 2rem;
@@ -153,6 +157,8 @@ h4{
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    flex: 1;
+    max-width: 500px;
 }
 .iconos-caracteristicas li{
     display: flex;
@@ -279,4 +285,9 @@ h4{
     font-weight: 700;
     margin: 0;
     padding: 3rem 0;
+}
+.resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
